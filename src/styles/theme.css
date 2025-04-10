@@ -31,15 +31,17 @@
 
 /* Light theme */
 .light-theme {
-    --bg-primary: #f8f9fa;
-    --bg-secondary: #e9ecef;
-    --text-primary: #212529;
+    --bg-primary: #bec4e4;
+    --bg-secondary: #ced0eb;
+    --text-primary: #001423;
     --text-secondary: #495057;
     --text-muted: #6c757d;
     --border-color: #dee2e6;
     --card-bg: #ffffff;
     --header-bg: rgba(255, 255, 255, 0.95);
     --shadow-color: rgba(0, 0, 0, 0.1);
+    /* Light mode (default) */
+    --heading-color: #001423;
 }
 
 body {
