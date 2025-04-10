@@ -1,48 +1,39 @@
-# Astro Starter Kit: Basics
+# ServiceRadar Design Contribution
 
-```sh
-npm create astro@latest -- --template basics
-```
+This repository contains design contributions for the open source project ServiceRadar, a distributed network monitoring system built for reliability in challenging environments.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## About ServiceRadar
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+ServiceRadar is designed for monitoring infrastructure and services in hard-to-reach places or constrained environments. It provides real-time visibility into your internal services with cloud-based alerting capabilities, ensuring you stay informed even during network or power outages.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Key Features
 
-## 🚀 Project Structure
+- **Real-Time Monitoring**: Gain proactive insights into service health, from processes and ports to cloud-enabled network devices
+- **Resilient Architecture**: Continues monitoring seamlessly even in unreliable network conditions or constrained environments
+- **Zero-Trust Security**: Leverages modern security principles including mutual TLS and API key authentication
+- **Cloud-Native Design**: Built with containerized microservice architecture for maximum scalability
+- **Multi-Environment Support**: Works across on-premise, cloud, and remote locations
 
-Inside of your Astro project, you'll see the following folders and files:
+## Design Contributions
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+This repository focuses on enhancing the user interface and experience of ServiceRadar with:
+- Responsive design components for both desktop and mobile views
+- Improved navigation and information architecture
+- Accessible, intuitive dashboards for monitoring critical services
+- Visual design language consistent with modern monitoring tools
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Getting Started
 
-## 🧞 Commands
+1. Review the design assets in the `/designs` directory
+2. Check out implementation examples in `/examples`
+3. For development setup, see the [main ServiceRadar repository](https://github.com/serviceradar/serviceradar)
 
-All commands are run from the root of the project, from a terminal:
+## Related Resources
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- [ServiceRadar Documentation](https://docs.serviceradar.io)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Design System Overview](DESIGN.md)
 
-## 👀 Want to learn more?
+## License
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
