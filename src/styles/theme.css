@@ -1,0 +1,78 @@
+:root {
+    /* Base colors */
+    --color-primary: #2fcc71;
+    --color-primary-dark: #27ae60;
+    --color-secondary: #3498db;
+    --color-secondary-dark: #2980b9;
+    --color-accent: #9b59b6;
+    --color-accent-dark: #8e44ad;
+
+    /* Neutral colors */
+    --color-black: #000;
+    --color-white: #fff;
+
+    /* Font families */
+    --font-body: "IBM Plex Sans", sans-serif;
+    --font-mono: "Victor Mono", monospace;
+}
+
+/* Dark theme (default) */
+.dark-theme {
+    --bg-primary: #001626;
+    --bg-secondary: #112240;
+    --text-primary: #e6f1ff;
+    --text-secondary: #a8b2d1;
+    --text-muted: #8892b0;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --card-bg: #1e2d4a;
+    --header-bg: #001626;
+    --shadow-color: rgba(0, 10, 20, 0.7);
+}
+
+/* Light theme */
+.light-theme {
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #e9ecef;
+    --text-primary: #212529;
+    --text-secondary: #495057;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --card-bg: #ffffff;
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Theme-specific styles */
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.border {
+    border: 1px solid var(--border-color);
+}
+
+.shadow {
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.placeholder-bg {
+    background-color: var(--bg-secondary);
+    opacity: 0.7;
+}

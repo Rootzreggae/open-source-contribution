@@ -1,0 +1,56 @@
+---
+interface Props {
+    title: string;
+    description?: string;
+}
+
+const {
+    title,
+    description = "Network visibility, anywhere - A distributed network monitoring system",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="description" content={description} />
+        <title>{title}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Victor+Mono:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <script is:inline>
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            if (
+                localStorage.getItem("theme") === "light" ||
+                (!localStorage.getItem("theme") &&
+                    window.matchMedia("(prefers-color-scheme: light)").matches)
+            ) {
+                document.documentElement.classList.add("light-theme");
+            } else {
+                document.documentElement.classList.add("dark-theme");
+            }
+        </script>
+    </head>
+    <body>
+        <slot />
+        <script src="../scripts/theme.js"></script>
+    </body>
+</html>
+<script is:inline>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+        localStorage.getItem("theme") === "light" ||
+        (!localStorage.getItem("theme") &&
+            window.matchMedia("(prefers-color-scheme: light)").matches)
+    ) {
+        document.documentElement.classList.add("light-theme");
+    } else {
+        document.documentElement.classList.add("dark-theme");
+    }
+</script>

@@ -1,0 +1,96 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Docs</h4>
+                <ul>
+                    <li><a href="/tutorial">Tutorial</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/github">Github discussion</a></li>
+                    <li><a href="/discord">Discord</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>More</h4>
+                <ul>
+                    <li><a href="/github">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                Copyright © {new Date().getFullYear()} Server Automation Corporation.
+                Built with Astrohtml.com
+            </p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: transparent;
+        padding: 3rem 0 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section ul li a {
+        color: var(--text-secondary);
+        transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+        color: var(--color-primary);
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

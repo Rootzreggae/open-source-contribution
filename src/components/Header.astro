@@ -1,0 +1,200 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/">
+                    <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30Z"
+                            fill="#4CAF50"
+                            fill-opacity="0.1"
+                            stroke="#4CAF50"
+                            stroke-opacity="0.3"
+                            stroke-width="2"></path>
+                        <path
+                            d="M16 24C20.4183 24 24 20.4183 24 16C24 11.5817 20.4183 8 16 8C11.5817 8 8 11.5817 8 16C8 20.4183 11.5817 24 16 24Z"
+                            stroke="#4CAF50"
+                            stroke-opacity="0.3"
+                            stroke-width="2"></path>
+                        <path
+                            d="M16 16H32C30.2414 13.0318 29.4893 9.57461 29.856 6.14404L16 16Z"
+                            fill="url(#paint0_linear_489_7523)"></path>
+                        <path d="M16 16H32" stroke="white"></path>
+                        <path
+                            d="M16 17C16.5523 17 17 16.5523 17 16C17 15.4477 16.5523 15 16 15C15.4477 15 15 15.4477 15 16C15 16.5523 15.4477 17 16 17Z"
+                            fill="#4CAF50"></path>
+                        <path
+                            d="M16 17C16.5523 17 17 16.5523 17 16C17 15.4477 16.5523 15 16 15C15.4477 15 15 15.4477 15 16C15 16.5523 15.4477 17 16 17Z"
+                            stroke="#4CAF50"
+                            stroke-opacity="0.15"
+                            stroke-width="2"></path>
+                        <defs>
+                            <linearGradient
+                                id="paint0_linear_489_7523"
+                                x1="16"
+                                y1="6.14404"
+                                x2="1616"
+                                y2="6.14404"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop stop-color="#4CAF50" stop-opacity="0.3"
+                                ></stop>
+                                <stop
+                                    offset="1"
+                                    stop-color="#4CAF50"
+                                    stop-opacity="0"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <span>service radar</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/docs">Docs</a></li>
+                    <li>
+                        <a href="/sandbox" class="sandbox-button">Sandbox</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <a
+                    href="https://github.com/serviceradar"
+                    class="github-link"
+                    aria-label="GitHub"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                        ></path>
+                    </svg>
+                </a>
+                <ThemeToggle />
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+    .header {
+        background-color: var(--bg-primary);
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-primary);
+        font-family: var(--font-mono);
+        font-weight: 100;
+        font-size: 1rem;
+    }
+
+    .logo-icon {
+        stroke: #2fcc71;
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin: 0;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: var(--text-secondary);
+        font-weight: 400;
+        transition: color 0.3s ease;
+        font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+        color: var(--text-primary);
+    }
+
+    .sandbox-button {
+        display: inline-block;
+        background-color: rgba(75, 85, 99, 0.3);
+        padding: 0.35rem 1.15rem;
+        border-radius: 9999px;
+        color: var(--text-primary) !important;
+        transition: background-color 0.3s ease;
+        font-size: 0.95rem;
+    }
+
+    .sandbox-button:hover {
+        background-color: rgba(75, 85, 99, 0.5);
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    .github-link {
+        color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        padding-right: 1.25rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .github-link:hover {
+        color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+
+        .nav-right {
+            display: flex;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 0 1rem;
+        }
+    }
+</style>
